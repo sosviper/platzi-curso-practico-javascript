@@ -64,3 +64,11 @@ function calcularAreaCuadrado() {
   const area = areaCuadrado(value);
   alert(area);
 }
+
+function calcularAlturaTriangulo(lado1, lado2, base) {
+  if (lado1 != lado2) {
+    return alert("No es un Triángulo isósceles")
+  }
+  const altura = Math.sqrt((lado1 * lado1) - ((base * base) / 4 ));
+  alert(altura);
+}
